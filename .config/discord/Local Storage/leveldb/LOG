@@ -1,6 +1,0 @@
-2021/10/18-18:03:42.899 8f34c Reusing MANIFEST /home/ben/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2021/10/18-18:03:42.916 8f34c Recovering log #7
-2021/10/18-18:03:42.917 8f34c Reusing old log /home/ben/.config/discord/Local Storage/leveldb/000007.log 
-2021/10/18-22:30:57.677 8f33a Level-0 table #11: started
-2021/10/18-22:30:57.681 8f33a Level-0 table #11: 15670 bytes OK
-2021/10/18-22:30:57.684 8f33a Delete type=0 #7
