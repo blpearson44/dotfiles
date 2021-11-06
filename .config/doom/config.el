@@ -66,7 +66,7 @@
 ;; Dired
 (map! :leader
       (:prefix ("d" . "dired")
-       :desc "Dired jump to current" "d" #'dired-jump)
+       :desc "Dired jump to current" "j" #'dired-jump)
       (:after dired
        (:map dired-mode-map
         :desc "Peep-dired image previews" "d p" #'peep-dired

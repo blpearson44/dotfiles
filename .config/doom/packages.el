@@ -53,12 +53,12 @@
 (package! websocket)
 (package! org-roam-ui :recipe (:host github :repo "org-roam/org-roam-ui" :files ("*.el" "out")))
 (package! peep-dired)
+(package! dired-open)
 (package! org-bullets)
 
 (package! gitconfig-mode
-	  :recipe (:host github :repo "magit/git-modes"
-			 :files ("gitconfig-mode.el")))
+  :recipe (:host github :repo "magit/git-modes"
+           :files ("gitconfig-mode.el")))
 (package! gitignore-mode
-	  :recipe (:host github :repo "magit/git-modes"
-			 :files ("gitignore-mode.el")))
-(package! all-the-icons)
+  :recipe (:host github :repo "magit/git-modes"
+           :files ("gitignore-mode.el")))
