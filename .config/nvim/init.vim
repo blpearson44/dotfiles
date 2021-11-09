@@ -15,7 +15,7 @@ Plug 'tpope/vim-commentary'
 " theme
 Plug 'dracula/vim'
 " Messes with Neovide
-" Plug 'tribela/vim-transparent'
+Plug 'tribela/vim-transparent'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ap/vim-css-color'
