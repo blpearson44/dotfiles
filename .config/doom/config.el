@@ -72,7 +72,7 @@
     ("\\\\" 160 #1# 57606)
     ("\\\\\\" 160 #1# 160 #1# 57607)
     ("{-" 160 #1# 57608)
-    ("[]" 160 #1# 57609)
+    ;; ("[]" 160 #1# 57609) This one just makes it annoying to enter things into brackets
     ("::" 160 #1# 57610)
     (":::" 160 #1# 160 #1# 57611)
     (":=" 160 #1# 57612)
@@ -173,14 +173,17 @@
     ("x" "x")
     (":" ":")
     ("+" 57710)
-    ("*" 57711))))
+    ("*" 57711)
+    )))
 (add-hook 'prog-mode-hook 'my/pretty-symbols)
 (add-hook 'org-mode-hook 'my/pretty-symbols)
+
 
 ;; Indent Guides
 (setq highlight-indent-guides-bitmap-function 'highlight-indent-guides--bitmap-line)
 (setq highlight-indent-guides-responsive 'top)
 (setq highlight-indent-guides-method 'bitmap)
+
 
 ;; Whitespace
 (defun my/whitespace ()
@@ -191,10 +194,10 @@
                                  (space-mark   ?\xA0  [?\u00A4]     [?_])
                                  (newline-mark ?\n    [?¬ ?\n])
                                  (tab-mark     ?\t    [?\u00BB ?\t] [?\\ ?\t]))))
-(whitespace-mode 0)
-(global-whitespace-mode 0)
+(after! whitespace
+  (add-hook 'whitespace-mode-hook 'my/whitespace))
 
-(add-hook 'whitespace-mode-hook 'my/whitespace)
+
 ;; Keymappings
 ;; Global
 ;; Whitespace
