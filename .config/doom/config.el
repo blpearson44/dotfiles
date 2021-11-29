@@ -1,7 +1,7 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 (setq user-full-name "Ben Pearson")
 (setq user-mail-address "blpearson44@icloud.com")
-(setq doom-font (font-spec :family "Fira Code" :size 20))
+(setq doom-font (font-spec :family "Fira Code" :size 22))
 (setq doom-theme 'doom-one)
 
 (setq org-directory "~/Org/")
@@ -37,7 +37,6 @@
           org-roam-ui-follow t
           org-roam-ui-update-on-save t
           org-roam-ui-open-on-start t))
-
 
 ;; Doom Dashboard
 (defun +fl/cowsay-fortune-banner ()
@@ -180,8 +179,8 @@
 
 
 ;; Indent Guides
-(setq highlight-indent-guides-bitmap-function 'highlight-indent-guides--bitmap-line)
-(setq highlight-indent-guides-responsive 'top)
+;; (setq highlight-indent-guides-bitmap-function 'highlight-indent-guides--bitmap-line)
+;; (setq highlight-indent-guides-responsive 'top)
 (setq highlight-indent-guides-method 'bitmap)
 
 
