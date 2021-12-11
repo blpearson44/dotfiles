@@ -50,7 +50,7 @@ keys = [
     Key([mod], "Escape", lazy.spawn("xkill")),
     Key([mod], "Return", lazy.spawn("alacritty")),
     Key([mod], "KP_Enter", lazy.spawn("alacritty")),
-    Key([mod], "space", lazy.spawn("ulauncher-toggle")),
+    Key([mod], "space", lazy.spawn("rofi -show")),
     Key([mod, "mod1"], "l", lazy.spawn("betterlockscreen -l")),
     Key(
         [mod, "mod1"],
@@ -282,8 +282,12 @@ def init_colors():
 
 colors = init_colors()
 
+
 # Widget Functions
 def replace_text(text):
+    for string in ["Spotify", "Discord"]:
+        if string in text:
+            return string
     return ""
 
 
@@ -309,10 +313,10 @@ tasklist = widget.TaskList(
     highlight_method="block",
     borderwidth=0,
     # markup_minimized='<span foreground="#B07190">{}</span>',
-    # markup_focused='<span foreground="#5A8CE8">{}</span>',
-    # txt_minimized="",
-    # txt_maximized="",
-    # txt_floating="",
+    markup_focused='<span foreground="#FFFFFF">{}</span>',
+    txt_minimized="",
+    txt_maximized="",
+    txt_floating="",
     parse_text=replace_text,
 )
 tasklist.mouse_callbacks = {
@@ -330,10 +334,10 @@ tasklist2 = widget.TaskList(
     highlight_method="block",
     borderwidth=0,
     # markup_minimized='<span foreground="#B07190">{}</span>',
-    # markup_focused='<span foreground="#5A8CE8">{}</span>',
-    # txt_minimized="",
-    # txt_maximized="",
-    # txt_floating="",
+    markup_focused='<span foreground="#FFFFFF">{}</span>',
+    txt_minimized="",
+    txt_maximized="",
+    txt_floating="",
     parse_text=replace_text,
 )
 tasklist2.mouse_callbacks = {
@@ -578,7 +582,7 @@ def move_spawned_apps(client):
     d["5"] = ["spotify", "Spotify"]
     d["6"] = []
     d["7"] = ["Steam", "steam"]
-    d["8"] = ["zoom"]
+    d["8"] = ["zoom", "discord"]
     d["9"] = []
 
     wm_class = client.window.get_wm_class()[0]
