@@ -18,6 +18,7 @@
  '(jdee-db-requested-breakpoint-face-colors (cons "#1B2229" "#98be65"))
  '(jdee-db-spec-breakpoint-face-colors (cons "#1B2229" "#3f444a"))
  '(objed-cursor-color "#ff6c6b")
+ '(org-agenda-files '("~/Org/Spiderverse/daily/" "~/Org/Spiderverse/" "~/Org/"))
  '(package-selected-packages '(rtags))
  '(pdf-view-midnight-colors (cons "#bbc2cf" "#282c34"))
  '(rustic-ansi-faces
