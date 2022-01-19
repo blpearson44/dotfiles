@@ -628,7 +628,7 @@ floating_layout = layout.Floating(
 )  # }}}
 auto_fullscreen = False
 
-focus_on_window_activation = "focus"  # or smart
+focus_on_window_activation = "smart"  # or smart
 
 wmname = "LG3D"
 # vim: fdm=marker
