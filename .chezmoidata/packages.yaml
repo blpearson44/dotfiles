@@ -1,0 +1,22 @@
+packages:
+  darwin:
+    brews:
+    - 'stow'
+    - 'eza'
+    - 'tmux'
+    - 'bat'
+    - 'zsh'
+    - 'gpg'
+    - 'wget'
+    - 'build-essential'
+    - 'manpages-dev'
+    - 'tree'
+    - 'ripgrep'
+    - 'fonts-noto-mono'
+    - 'tldr'
+    - 'zoxide'
+    - 'yazi'
+    - 'nvim'
+    casks:
+    - 'wezterm@nightly'
+    - 'kitty'
