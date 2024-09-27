@@ -1,0 +1,22 @@
+[".config/tmux/plugins/tpm"]
+    type = "archive"
+    url = "https://github.com/tmux-plugins/tpm/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+
+[".zsh/autocomplete"]
+    type = "archive" 
+    url = "https://github.com/marlonrichert/zsh-autocomplete/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+
+[".zsh/syntax-highlighting"]
+    type = "archive"
+    url = "https://github.com/zsh-users/zsh-syntax-highlighting/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+
+["Scripts"]
+    type = "git-repo"
+    url = "git@github.com:blpearson44/Scripts.git"
+    refreshPeriod = "168h"
