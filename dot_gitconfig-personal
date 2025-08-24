@@ -1,5 +1,0 @@
-[user]
-	name = Ben Pearson
-	email = blpearson44@icloud.com
-[core]
-	sshCommand = "ssh -i ~/.ssh/id_ed25519"
